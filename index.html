@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Библиотека Тёмных Свитков</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== ДВЕРИ ===================== -->
+<div id="gate">
+  <div class="gate-title">
+    <h1>Библиотека Тёмных Свитков</h1>
+    <p>Толкните врата</p>
+  </div>
+
+  <div class="torch tl"><div class="flame"></div><div class="sconce"></div></div>
+  <div class="torch tr"><div class="flame"></div><div class="sconce"></div></div>
+
+  <div class="gate-frame" id="gateFrame">
+    <div class="door left" id="doorLeft">
+      <div class="door-inner-border"></div>
+      <div class="rivets" id="rivetsLeft"></div>
+      <div class="handle">
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="#8a8073" stroke-width="9"/><circle cx="50" cy="50" r="34" fill="none" stroke="#241f1a" stroke-width="3"/></svg>
+      </div>
+      <div class="sigil">
+        <svg viewBox="0 0 100 100"><path d="M50 8 L58 40 L92 40 L64 58 L74 92 L50 70 L26 92 L36 58 L8 40 L42 40 Z" fill="#a9812f" opacity="0.5"/></svg>
+      </div>
+    </div>
+    <div class="door right" id="doorRight">
+      <div class="door-inner-border"></div>
+      <div class="rivets" id="rivetsRight"></div>
+      <div class="handle">
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="#8a8073" stroke-width="9"/><circle cx="50" cy="50" r="34" fill="none" stroke="#241f1a" stroke-width="3"/></svg>
+      </div>
+      <div class="sigil">
+        <svg viewBox="0 0 100 100"><path d="M50 8 L58 40 L92 40 L64 58 L74 92 L50 70 L26 92 L36 58 L8 40 L42 40 Z" fill="#a9812f" opacity="0.5"/></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== БИБЛИОТЕКА ===================== -->
+<div id="library">
+  <div class="lib-header">
+    <h2>Зал Избранных Томов</h2>
+    <p>За окном шумит ночной дождь, а здесь, среди тёплого света свечей, ждут десять книг. Прикоснитесь к обложке, чтобы узнать её тайну.</p>
+  </div>
+
+  <div class="shelf-wrap">
+    <div class="books-grid" id="booksGrid"></div>
+  </div>
+
+  <footer>Библиотека Тёмных Свитков · читай при свече</footer>
+</div>
+
+<!-- ===================== ОКНО С ДОЖДЁМ ===================== -->
+<div class="rain-window" id="rainWindow">
+  <div class="glass">
+    <div class="sky-glow"></div>
+    <div class="drops" id="drops"></div>
+    <div class="lightning" id="windowLightning"></div>
+  </div>
+  <div class="mullion-v"></div>
+  <div class="mullion-h"></div>
+</div>
+<div class="page-flash" id="pageFlash"></div>
+
+<!-- ===================== МОДАЛКА ===================== -->
+<div class="overlay" id="overlay">
+  <div class="scroll-card">
+    <button class="close-seal" id="closeModal">×</button>
+    <div class="modal-emblem" id="modalEmblem"></div>
+    <h3 class="modal-title" id="modalTitle"></h3>
+    <div class="modal-author" id="modalAuthor"></div>
+    <div class="modal-desc" id="modalDesc"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
